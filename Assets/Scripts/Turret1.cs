@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(LineRenderer))]
 public class Turret1 : MonoBehaviour
 {
     public Bullet1 bulletPrefab;

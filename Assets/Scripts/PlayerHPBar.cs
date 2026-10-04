@@ -35,6 +35,8 @@ public class PlayerHPBar : MonoBehaviour
         float targetFill = currentHp / maxHp;
         
         realHpBar.fillAmount = targetFill;
+
+        Debug.Log("player is damaged!");
         
         if (ghostCoroutine != null)
         {
