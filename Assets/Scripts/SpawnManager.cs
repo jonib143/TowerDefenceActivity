@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    [Header("Shared Target")]
-    public Transform sharedTargetLocation; // P2 (Quadratic) & P3 (Cubic)
+    [Header("Target")]
+    public Transform sharedTargetLocation; 
 
     [Header("Spawn Point 1 - Quadratic Bézier (3 Points)")]
     public Transform quadSpawnPoint;    // P0
@@ -13,8 +13,7 @@ public class SpawnManager : MonoBehaviour
     public Transform cubicSpawnPoint;   // P0
     public Transform cubicControlPoint1; // P1
     public Transform cubicControlPoint2; // P2
-
-    [Header("Prefab & Timing")]
+    
     public GameObject enemyPrefab;
     public float spawnInterval = 2f;
     public float enemyTravelTime = 4f;
@@ -49,8 +48,7 @@ public class SpawnManager : MonoBehaviour
     private void OnDrawGizmos()
     {
         if (sharedTargetLocation == null) return;
-
-        // Draw Quadratic Path (Green)[cite: 9]
+        
         if (quadSpawnPoint != null && quadControlPoint != null)
         {
             Gizmos.color = Color.green;

@@ -4,15 +4,12 @@ using UnityEngine.UI;
 
 public class PlayerHPBar : MonoBehaviour
 {
-    [Header("UI References")]
     public Image realHpBar;   
     public Image ghostHpBar;  
-
-    [Header("HP Settings")]
+    
     public float maxHp = 20f;
     private float currentHp;
-
-    [Header("Ghost Bar Animation")]
+    
     public float delayBeforeEase = 0.4f; 
     public float easeDuration = 0.6f;    
 

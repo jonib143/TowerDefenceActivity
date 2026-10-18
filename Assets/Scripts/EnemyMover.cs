@@ -6,7 +6,7 @@ public class EnemyMover : MonoBehaviour
 
     [Header("Path Settings")]
     public CurveType curveType;
-    public Transform p0, p1, p2, p3; // p3 is only used for Cubic
+    public Transform p0, p1, p2, p3; 
     public float travelDuration = 3f;
 
     private float elapsedTime = 0f;
